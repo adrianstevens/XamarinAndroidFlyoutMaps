@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <FrameLayout
+        android:id="@+id/frameMap"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:minWidth="25px"
+        android:minHeight="25px" />
+</LinearLayout>

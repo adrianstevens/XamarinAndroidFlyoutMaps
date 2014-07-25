@@ -1,0 +1,26 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="ActionBarCompat/MainActivity.cs" Line="25" Column="25" />
+      <File FileName="ActionBarCompat/Fragments/MyMapFragment.cs" Line="1" Column="1" />
+      <File FileName="../../Desktop/Notes/XAM230 - Maps and Location/labs/Lab 02 resources/MappingAndroidLab_Complete/MappingAndroidLab_demo1/MainActivity.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="ActionBarCompat" expanded="True" selected="True">
+            <Node name="Fragments" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/jamesmontemagno/Projects/GooglePlusSignIn/GooglePlusSignIn/MainActivity.cs" line="61" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ActionBarCompat MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" AndroidDeviceId-Debug="emulator-5554" />
+</Properties>
