@@ -26,7 +26,7 @@ namespace GooglePlusSignIn
 		DrawerLayout drawerLayout;
 		ActionBarDrawerToggle drawerToggle;
 		ListView drawerList;
-		static string[] sections = new[] { "Map1", "Map2", "Map3" };
+		static string[] sections = new[] { "Map Fragment Direct", "Frag in Frag (code)", "Frag in Frag (inflate)" };
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -59,13 +59,17 @@ namespace GooglePlusSignIn
 			switch (position) 
 			{
 			case 0:
-				fragment = new MyMapFragment2 ();
+				fragment = new SupportMapFragment ();
 				break;
 			case 1:
 				fragment = new MyMapFragment ();
 				break;
+			case 2:
+				fragment = new MyMapFragment2 ();
+				break;
+			
 			default:
-				fragment = new SupportMapFragment();
+
 
 				break;
 			}

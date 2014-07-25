@@ -1,24 +1,15 @@
-﻿<Properties>
+﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.API_16_GP" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ActionBarMap/Resources/values/Strings.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ActionBarMap/Fragments/MyMapFragment2.cs">
     <Files>
-      <File FileName="ActionBarMap.sln" Line="102" Column="102" />
-      <File FileName="ActionBarMap/Resources/values/Strings.xml" Line="39" Column="39" />
+      <File FileName="ActionBarMap/Fragments/MyMapFragment2.cs" Line="1" Column="1" />
+      <File FileName="ActionBarMap/Fragments/MyMapFragment.cs" Line="1" Column="1" />
+      <File FileName="ActionBarMap/MainActivity.cs" Line="10" Column="10" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="ActionBarMap" expanded="True" selected="True">
-            <Node name="Resources" expanded="True">
-              <Node name="values" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ActionBarMap MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" />
 </Properties>

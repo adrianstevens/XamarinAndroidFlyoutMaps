@@ -30,7 +30,7 @@ namespace GooglePlusSignIn
 		{
 			//this.HasOptionsMenu = true;
 
-			var view = inflater.Inflate(Resource.Layout.map_frag, null);
+			var view = inflater.Inflate(Resource.Layout.map_frag2, null);
 
 			return view;
 		}
