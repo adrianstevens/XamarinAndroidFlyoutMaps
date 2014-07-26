@@ -1,10 +1,10 @@
 ﻿<Properties GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.API_16_GP" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ActionBarMap/Fragments/MyMapFragment2.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ActionBarMap/MainActivity.cs">
     <Files>
-      <File FileName="ActionBarMap/Fragments/MyMapFragment2.cs" Line="1" Column="1" />
-      <File FileName="ActionBarMap/Fragments/MyMapFragment.cs" Line="1" Column="1" />
-      <File FileName="ActionBarMap/MainActivity.cs" Line="10" Column="10" />
+      <File FileName="ActionBarMap/MainActivity.cs" Line="4" Column="4" />
+      <File FileName="ActionBarMap/Fragments/MyMapFragment2.cs" Line="23" Column="23" />
+      <File FileName="ActionBarMap/Fragments/MyMapFragment.cs" Line="23" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

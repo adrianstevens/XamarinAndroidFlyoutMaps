@@ -13,8 +13,8 @@ using Android.Support.V4.View;
 using Android.Support.V4.Widget;
 using Android.Support.V4.App;
 using Android.Content.Res;
-using ICS;
 using Android.Gms.Maps;
+using ActionBarMap;
 
 namespace GooglePlusSignIn
 {
@@ -22,7 +22,7 @@ namespace GooglePlusSignIn
 	//[MetaData ("android.support.UI_OPTIONS", Value = "splitActionBarWhenNarrow")]//If you wanted to slit it!
 	public class MainActivity : ActionBarActivity
 	{
-		static readonly string Tag = "Flyout";
+	//	static readonly string Tag = "Flyout";
 		DrawerLayout drawerLayout;
 		ActionBarDrawerToggle drawerToggle;
 		ListView drawerList;
@@ -54,7 +54,7 @@ namespace GooglePlusSignIn
 
 			Android.Support.V4.App.Fragment fragment = null;
 
-			fragment = new MyMapFragment ();
+			position = 1;
 
 			switch (position) 
 			{

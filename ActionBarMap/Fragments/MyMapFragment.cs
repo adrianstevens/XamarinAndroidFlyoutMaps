@@ -16,7 +16,7 @@ using GooglePlusSignIn;
 using Android.Gms.Maps;
 
 
-namespace ICS
+namespace ActionBarMap
 {
 	public class MyMapFragment : Fragment
 	{
@@ -25,14 +25,10 @@ namespace ICS
 		public override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
-
-			// Create your fragment here
 		}
 
 		public override Android.Views.View OnCreateView(Android.Views.LayoutInflater inflater, Android.Views.ViewGroup container, Android.OS.Bundle savedInstanceState)
 		{
-			//this.HasOptionsMenu = true;
-
 			var view = inflater.Inflate(Resource.Layout.map_frag, null);
 
 			CreateMap ();
