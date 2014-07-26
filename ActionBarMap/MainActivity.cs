@@ -26,7 +26,7 @@ namespace GooglePlusSignIn
 		DrawerLayout drawerLayout;
 		ActionBarDrawerToggle drawerToggle;
 		ListView drawerList;
-		static string[] sections = new[] { "Map Fragment Direct", "Frag in Frag (code)", "Frag in Frag (inflate)" };
+		static string[] sections = new[] { "Map Fragment Direct", "Map in Fragment (code)", "Map in Fragment (inflate)" };
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -53,8 +53,6 @@ namespace GooglePlusSignIn
 			SupportFragmentManager.PopBackStack (null, (int)PopBackStackFlags.Inclusive);
 
 			Android.Support.V4.App.Fragment fragment = null;
-
-			position = 1;
 
 			switch (position) 
 			{
