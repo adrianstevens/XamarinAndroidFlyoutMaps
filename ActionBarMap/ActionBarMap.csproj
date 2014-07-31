@@ -63,6 +63,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Fragments\MyMapFragment.cs" />
     <Compile Include="Fragments\MyMapFragment2.cs" />
+    <Compile Include="Fragments\MyMapFragment3.cs" />
+    <Compile Include="GoogleMapsKey.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -95,13 +97,14 @@
     <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\layout\map_frag.axml" />
     <AndroidResource Include="Resources\layout\map_frag2.axml" />
+    <AndroidResource Include="Resources\layout\map_frag3.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup />
   <ItemGroup>
     <XamarinComponentReference Include="googleplayservicesgingerbread">
-      <Visible>False</Visible>
       <Version>18.0.0.1</Version>
+      <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>
 </Project>
