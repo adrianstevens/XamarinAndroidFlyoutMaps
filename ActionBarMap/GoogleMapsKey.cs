@@ -5,5 +5,5 @@
 #if RELEASE
 [assembly: MetaDataAttribute("com.google.android.maps.v2.API_KEY", Value = "release_key_goes_here")]
 #else
-[assembly: MetaDataAttribute("com.google.android.maps.v2.API_KEY", Value = "AIzaSyAb19CRGboHA-F1lSqd82LXf3DKS78XOzw")]
+[assembly: MetaDataAttribute("com.google.android.maps.v2.API_KEY", Value = "AIzaSyDYGCJcdfXCoGcbjKl5KdmGXjXAOp4G5H0")]
 #endif

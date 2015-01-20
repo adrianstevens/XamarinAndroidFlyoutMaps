@@ -7,19 +7,22 @@ using Android.Widget;
 using Android.OS;
 using Android.Media;
 using System.Collections.Generic;
-using Android.Support.V7.App;
-using Android.Support.V7.Widget;
-using Android.Support.V4.View;
-using Android.Support.V4.Widget;
-using Android.Support.V4.App;
+//using Android.Support.V7.App;
+//using Android.Support.V7.Widget;
+//using Android.Support.V4.View;
+//using Android.Support.V4.Widget;
+//using Android.Support.V4.App;
 using Android.Content.Res;
 using Android.Gms.Maps;
 using ActionBarMap;
+using Android.Support.V4.Widget;
+using Android.Support.V7.App;
+
 
 namespace GooglePlusSignIn
 {
 	[Activity (Label = "ActionBarCompat", Icon = "@drawable/ic_launcher", Theme = "@style/Theme.AppCompat.Light", MainLauncher = true)]
-	//[MetaData ("android.support.UI_OPTIONS", Value = "splitActionBarWhenNarrow")]//If you wanted to slit it!
+	[MetaData ("android.support.PARENT_ACTIVITY", Value = "actionbarcompat.MainActivity")]
 	public class MainActivity : ActionBarActivity
 	{
 	//	static readonly string Tag = "Flyout";
@@ -31,6 +34,7 @@ namespace GooglePlusSignIn
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
+
 			SetContentView (Resource.Layout.Main);
 
 			drawerLayout = FindViewById<DrawerLayout> (Resource.Id.drawer_layout);
@@ -38,14 +42,18 @@ namespace GooglePlusSignIn
 			drawerList = FindViewById<ListView> (Resource.Id.flyout);
 			drawerList.Adapter = new ArrayAdapter<string> (this, Resource.Layout.drawer_list_item, sections);
 
-			drawerToggle = new ActionBarDrawerToggle (this, drawerLayout, Resource.Drawable.ic_drawer, Resource.String.drawer_open, Resource.String.drawer_close);
+
+			drawerToggle = new ActionBarDrawerToggle (this, drawerLayout, Resource.String.drawer_open, Resource.String.drawer_close);
+
+			//drawerToggle = new ActionBarDrawerToggle (this, drawerLayout, Resource.Drawable.ic_drawer, Resource.String.drawer_open, Resource.String.drawer_close);
 			drawerLayout.SetDrawerListener (drawerToggle);
 
 			drawerList.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => ListItemClicked (e.Position);
 			ListItemClicked (0);
 
-			ActionBar.SetDisplayHomeAsUpEnabled (true);
-			ActionBar.SetHomeButtonEnabled (true);
+	
+			SupportActionBar.SetDisplayHomeAsUpEnabled (true);
+			SupportActionBar.SetHomeButtonEnabled (true);
 		}
 
 		void ListItemClicked (int position)
