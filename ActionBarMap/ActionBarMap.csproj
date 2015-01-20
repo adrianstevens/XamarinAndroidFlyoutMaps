@@ -76,21 +76,9 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\drawable\default_icon.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\ic_action_content_discard.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\ic_action_content_discard.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_content_discard.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\ic_action_content_save.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\ic_action_content_save.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_content_save.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\ic_action_rating_good.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\ic_action_rating_good.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_rating_good.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\ic_action_content_edit.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\ic_action_content_edit.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_content_edit.png" />
     <AndroidResource Include="Resources\menu\main_menu.xml" />
     <AndroidResource Include="Resources\drawable\drawer_shadow.9.png" />
     <AndroidResource Include="Resources\drawable\ic_drawer.png" />
@@ -99,6 +87,18 @@
     <AndroidResource Include="Resources\layout\map_frag2.axml" />
     <AndroidResource Include="Resources\layout\map_frag3.axml" />
     <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_content_discard.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_content_edit.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_content_save.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_rating_good.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_content_discard.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_content_edit.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_content_save.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_rating_good.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_content_discard.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_content_edit.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_content_save.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_rating_good.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup />

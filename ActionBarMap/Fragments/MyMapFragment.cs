@@ -14,10 +14,11 @@ using Android.Support.V4.App;
 using GooglePlusSignIn;
 
 using Android.Gms.Maps;
-
+using System.Threading.Tasks;
 
 namespace ActionBarMap
 {
+	//interface only needed if you're getting a reference to the map object
 	public class MyMapFragment : Fragment
 	{
 		SupportMapFragment _myMapFrag;
@@ -27,7 +28,7 @@ namespace ActionBarMap
 			base.OnCreate (savedInstanceState);
 		}
 
-		public override Android.Views.View OnCreateView(Android.Views.LayoutInflater inflater, Android.Views.ViewGroup container, Android.OS.Bundle savedInstanceState)
+		public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 		{
 			var view = inflater.Inflate(Resource.Layout.map_frag, null);
 
@@ -44,13 +45,14 @@ namespace ActionBarMap
 			var tx = ChildFragmentManager.BeginTransaction ();
 			tx.Add(Resource.Id.frameMap, _myMapFrag);
 			tx.Commit();
-
 		}
-
+			
 	/*	public override void OnCreateOptionsMenu(IMenu menu, MenuInflater inflater)
 		{
 			inflater.Inflate(Resource.Menu.refresh, menu);
 		}*/
+
+
 	}
 }
 

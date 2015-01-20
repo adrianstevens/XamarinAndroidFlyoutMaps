@@ -5,11 +5,11 @@ using Android.App;
 // Information about this assembly is defined by the following attributes.
 // Change them to the values specific to your project.
 [assembly: AssemblyTitle ("ActionBarMap")]
-[assembly: AssemblyDescription ("")]
+[assembly: AssemblyDescription ("https://github.com/adrianstevens")]
 [assembly: AssemblyConfiguration ("")]
 [assembly: AssemblyCompany ("")]
 [assembly: AssemblyProduct ("")]
-[assembly: AssemblyCopyright ("AdrianStevens")]
+[assembly: AssemblyCopyright ("Adrian Stevens")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".

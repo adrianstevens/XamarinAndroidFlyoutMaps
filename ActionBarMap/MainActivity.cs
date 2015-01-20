@@ -12,6 +12,7 @@ using Android.Gms.Maps;
 using ActionBarMap;
 using Android.Support.V4.Widget;
 using Android.Support.V7.App;
+using System.Threading.Tasks;
 
 
 namespace GooglePlusSignIn
@@ -23,6 +24,7 @@ namespace GooglePlusSignIn
 		DrawerLayout drawerLayout;
 		ActionBarDrawerToggle drawerToggle;
 		ListView drawerList;
+
 		static string[] sections = new[] { "Map Fragment Direct", "Map in Fragment (code)", "Map in Fragment (inflate)", "Partial Screen Map"};
 
 		protected override void OnCreate (Bundle bundle)
@@ -50,7 +52,7 @@ namespace GooglePlusSignIn
 			SupportActionBar.SetHomeButtonEnabled (true);
 		}
 
-		void ListItemClicked (int position)
+		async Task ListItemClicked (int position)
 		{
 			SupportFragmentManager.PopBackStack (null, (int)PopBackStackFlags.Inclusive);
 
@@ -59,19 +61,24 @@ namespace GooglePlusSignIn
 			switch (position) 
 			{
 			case 0:
+				//load a map fragment directly from the API
 				fragment = new SupportMapFragment ();
+
 				break;
 			case 1:
+				//load a fragment with a frame layout, create a SupportMapFragment,
+				//and insert it into the frame layout
 				fragment = new MyMapFragment ();
 				break;
 			case 2:
+				//load a fragment with a map fragment defined in the layout
 				fragment = new MyMapFragment2 ();
 				break;
 			case 3:
+				//example of map in a fragment sharing screen space with other controls
 				fragment = new MyMapFragment3 ();
 				break;
 			default:
-
 
 				break;
 			}
@@ -85,10 +92,6 @@ namespace GooglePlusSignIn
 			drawerList.SetItemChecked (position, true);
 			SupportActionBar.Title = sections [position];
 			drawerLayout.CloseDrawer (drawerList);
-
-			SupportMapFragment frag = fragment as SupportMapFragment;
-	//		var map = frag.Map; //depricated
-	//		var map2 = frag.GetMapAsync (this);
 		}
 
 		protected override void OnPostCreate (Bundle savedInstanceState)
