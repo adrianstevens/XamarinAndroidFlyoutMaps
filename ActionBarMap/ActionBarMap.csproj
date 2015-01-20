@@ -95,10 +95,10 @@
     <AndroidResource Include="Resources\drawable\drawer_shadow.9.png" />
     <AndroidResource Include="Resources\drawable\ic_drawer.png" />
     <AndroidResource Include="Resources\layout\drawer_list_item.xml" />
-    <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\layout\map_frag.axml" />
     <AndroidResource Include="Resources\layout\map_frag2.axml" />
     <AndroidResource Include="Resources\layout\map_frag3.axml" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup />

@@ -7,11 +7,6 @@ using Android.Widget;
 using Android.OS;
 using Android.Media;
 using System.Collections.Generic;
-//using Android.Support.V7.App;
-//using Android.Support.V7.Widget;
-//using Android.Support.V4.View;
-//using Android.Support.V4.Widget;
-//using Android.Support.V4.App;
 using Android.Content.Res;
 using Android.Gms.Maps;
 using ActionBarMap;
@@ -22,10 +17,9 @@ using Android.Support.V7.App;
 namespace GooglePlusSignIn
 {
 	[Activity (Label = "ActionBarCompat", Icon = "@drawable/ic_launcher", Theme = "@style/Theme.AppCompat.Light", MainLauncher = true)]
-	[MetaData ("android.support.PARENT_ACTIVITY", Value = "actionbarcompat.MainActivity")]
+	//[MetaData ("android.support.PARENT_ACTIVITY", Value = "actionbarcompat.MainActivity")]
 	public class MainActivity : ActionBarActivity
 	{
-	//	static readonly string Tag = "Flyout";
 		DrawerLayout drawerLayout;
 		ActionBarDrawerToggle drawerToggle;
 		ListView drawerList;
@@ -76,8 +70,6 @@ namespace GooglePlusSignIn
 			case 3:
 				fragment = new MyMapFragment3 ();
 				break;
-
-
 			default:
 
 
@@ -93,6 +85,10 @@ namespace GooglePlusSignIn
 			drawerList.SetItemChecked (position, true);
 			SupportActionBar.Title = sections [position];
 			drawerLayout.CloseDrawer (drawerList);
+
+			SupportMapFragment frag = fragment as SupportMapFragment;
+	//		var map = frag.Map; //depricated
+	//		var map2 = frag.GetMapAsync (this);
 		}
 
 		protected override void OnPostCreate (Bundle savedInstanceState)

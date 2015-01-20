@@ -38,8 +38,6 @@ namespace ActionBarMap
 
 		void CreateMap ()
 		{
-			var mapFrag = new SupportMapFragment ();
-
 			_myMapFrag = SupportMapFragment.NewInstance();
 			//FragmentTransaction tx = FragmentManager.BeginTransaction();
 
