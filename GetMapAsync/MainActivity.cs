@@ -13,7 +13,7 @@ using Android.Gms.Maps.Model;
 namespace GetMapAsync
 {
 	[Activity (Label = "GetMapAsync", MainLauncher = true, Icon = "@drawable/icon")]
-	public class MainActivity: FragmentActivity, IOnMapReadyCallback
+	public class MainActivity: FragmentActivity
 	{
 		GoogleMap _map;
 
@@ -28,16 +28,16 @@ namespace GetMapAsync
 			// and attach an event to it
 			Button button = FindViewById<Button> (Resource.Id.myButton);
 			
-			button.Click += delegate {
+			button.Click += async delegate {
 				if(bAdded == false)
 				{
-					AddMap ();
 					bAdded = true;
-
-					button.Text = "";
+					await AddMap ();
 				}
 				else
-				{}
+				{
+					Toast.MakeText(this, "Map already added", ToastLength.Short).Show();
+				}
 			}; 
 		}
 
@@ -51,34 +51,46 @@ namespace GetMapAsync
 				.Replace (Resource.Id.content_frame, fragment)
 				.Commit ();
 
-			await GetMap (fragment);
+			//get a reference to the GoogleMap object
+			_map = await new GetMapHelper ().GetMap (fragment);
 
-			_map.UiSettings.CompassEnabled = true;
+			//show the zoom controls 
+			_map.UiSettings.ZoomControlsEnabled = true;
 		}
 
-		TaskCompletionSource<GoogleMap> tcs;
-		async Task<GoogleMap> GetMap (SupportMapFragment frag)
+		class GetMapHelper : Java.Lang.Object, IOnMapReadyCallback, IDisposable 
 		{
-			if (_map != null)
-				return _map;
+			TaskCompletionSource<GoogleMap> tcs;
 
-			if (tcs != null && tcs.Task.Status == TaskStatus.Running) {
+			public GetMapHelper ()
+			{
+			}
+
+			public async Task<GoogleMap> GetMap (SupportMapFragment frag)
+			{
+				//check to see if the task is running
+				if (tcs != null && tcs.Task.Status == TaskStatus.Running) {
+					return await tcs.Task;
+				}
+
+				//instantiate the task
+				tcs = new TaskCompletionSource<GoogleMap> ();
+
+				//get the GoogleMap object
+				frag.GetMapAsync (this);
+				await tcs.Task;
+
 				return tcs.Task.Result;
 			}
 
-			tcs = new TaskCompletionSource<GoogleMap> ();
+			void IOnMapReadyCallback.OnMapReady (GoogleMap googleMap)
+			{
+				tcs.TrySetResult (googleMap);
+			}
 
-			frag.GetMapAsync (this);
-			await tcs.Task;
-
-			return _map;
-		}
-
-		void IOnMapReadyCallback.OnMapReady (GoogleMap googleMap)
-		{
-			_map = googleMap;
-
-			tcs.TrySetResult (_map);
+			void IDisposable.Dispose ()
+			{	
+			}
 		}
 	}
 }
