@@ -3,17 +3,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5C996F18-69B5-43BE-A162-FA01C1D5ECD3}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{5C996F18-69B5-43BE-A162-FA01C1D5ECD3}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>GooglePlusSignIn</RootNamespace>
+    <RootNamespace>ActionBarMaps</RootNamespace>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <AssemblyName>GooglePlusSignIn</AssemblyName>
+    <AssemblyName>ActionBarMaps</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
   </PropertyGroup>
@@ -27,7 +27,6 @@
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
     <ConsolePause>false</ConsolePause>
-    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -36,8 +35,8 @@
     <DefineConstants>__MOBILE__;__ANDROID__;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -73,33 +72,18 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
-    <AndroidResource Include="Resources\drawable\Icon.png" />
-    <AndroidResource Include="Resources\drawable\default_icon.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\ic_launcher.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
-    <AndroidResource Include="Resources\menu\main_menu.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable\drawer_shadow.9.png" />
-    <AndroidResource Include="Resources\drawable\ic_drawer.png" />
     <AndroidResource Include="Resources\layout\drawer_list_item.xml" />
     <AndroidResource Include="Resources\layout\map_frag.axml" />
     <AndroidResource Include="Resources\layout\map_frag2.axml" />
     <AndroidResource Include="Resources\layout\map_frag3.axml" />
-    <AndroidResource Include="Resources\layout\Main.axml" />
-    <AndroidResource Include="Resources\drawable-hdpi\ic_action_content_discard.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\ic_action_content_edit.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\ic_action_content_save.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\ic_action_rating_good.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\ic_action_content_discard.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\ic_action_content_edit.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\ic_action_content_save.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\ic_action_rating_good.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_content_discard.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_content_edit.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_content_save.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_rating_good.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
-  <ItemGroup />
 </Project>

@@ -1,9 +1,9 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupItem="GetMapAsync/GetMapAsync.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GetMapAsync/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ActionBarMap/Fragments/MyMapFragment.cs">
     <Files>
-      <File FileName="ActionBarMap/GoogleMapsKey.cs" Line="1" Column="1" />
-      <File FileName="GetMapAsync/MainActivity.cs" Line="4" Column="4" />
+      <File FileName="ActionBarMap/Fragments/MyMapFragment2.cs" Line="1" Column="1" />
+      <File FileName="ActionBarMap/Fragments/MyMapFragment.cs" Line="4" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

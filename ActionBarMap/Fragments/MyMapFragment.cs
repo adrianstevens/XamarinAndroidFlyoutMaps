@@ -1,9 +1,7 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
@@ -11,14 +9,12 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using Android.Support.V4.App;
-using GooglePlusSignIn;
-
 using Android.Gms.Maps;
 using System.Threading.Tasks;
+using ActionBarMaps;
 
-namespace ActionBarMap
+namespace ActionBarMaps
 {
-	//interface only needed if you're getting a reference to the map object
 	public class MyMapFragment : Fragment
 	{
 		SupportMapFragment _myMapFrag;
@@ -46,13 +42,6 @@ namespace ActionBarMap
 			tx.Add(Resource.Id.frameMap, _myMapFrag);
 			tx.Commit();
 		}
-			
-	/*	public override void OnCreateOptionsMenu(IMenu menu, MenuInflater inflater)
-		{
-			inflater.Inflate(Resource.Menu.refresh, menu);
-		}*/
-
-
 	}
 }
 

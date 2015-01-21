@@ -9,15 +9,14 @@ using Android.Media;
 using System.Collections.Generic;
 using Android.Content.Res;
 using Android.Gms.Maps;
-using ActionBarMap;
 using Android.Support.V4.Widget;
 using Android.Support.V7.App;
 using System.Threading.Tasks;
 
 
-namespace GooglePlusSignIn
+namespace ActionBarMaps
 {
-	[Activity (Label = "ActionBarCompat", Icon = "@drawable/ic_launcher", Theme = "@style/Theme.AppCompat.Light", MainLauncher = true)]
+	[Activity (Label = "ActionBarCompat", Icon = "@drawable/icon", Theme = "@style/Theme.AppCompat.Light", MainLauncher = true)]
 	//[MetaData ("android.support.PARENT_ACTIVITY", Value = "actionbarcompat.MainActivity")]
 	public class MainActivity : ActionBarActivity
 	{
@@ -25,7 +24,7 @@ namespace GooglePlusSignIn
 		ActionBarDrawerToggle drawerToggle;
 		ListView drawerList;
 
-		static string[] sections = new[] { "Map Fragment Direct", "Map in Fragment (code)", "Map in Fragment (inflate)", "Partial Screen Map"};
+		static string[] sections = new[] { "SupportFragment", "Map in FrameLayout", "Map in Fragment", "Partial Screen Map"};
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -41,7 +40,6 @@ namespace GooglePlusSignIn
 
 			drawerToggle = new ActionBarDrawerToggle (this, drawerLayout, Resource.String.drawer_open, Resource.String.drawer_close);
 
-			//drawerToggle = new ActionBarDrawerToggle (this, drawerLayout, Resource.Drawable.ic_drawer, Resource.String.drawer_open, Resource.String.drawer_close);
 			drawerLayout.SetDrawerListener (drawerToggle);
 
 			drawerList.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => ListItemClicked (e.Position);
@@ -52,7 +50,7 @@ namespace GooglePlusSignIn
 			SupportActionBar.SetHomeButtonEnabled (true);
 		}
 
-		async Task ListItemClicked (int position)
+		void ListItemClicked (int position)
 		{
 			SupportFragmentManager.PopBackStack (null, (int)PopBackStackFlags.Inclusive);
 
