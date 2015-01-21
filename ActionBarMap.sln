@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
+# Visual Studio 2012
 VisualStudioVersion = 12.0.30626.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionBarMap", "ActionBarMap\ActionBarMap.csproj", "{5C996F18-69B5-43BE-A162-FA01C1D5ECD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetMapAsync", "GetMapAsync\GetMapAsync.csproj", "{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,11 +48,32 @@ Global
 		{5C996F18-69B5-43BE-A162-FA01C1D5ECD3}.Release|iPhone.Build.0 = Release|Any CPU
 		{5C996F18-69B5-43BE-A162-FA01C1D5ECD3}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{5C996F18-69B5-43BE-A162-FA01C1D5ECD3}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Ad-Hoc|Any CPU.Build.0 = Release|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Ad-Hoc|iPhoneSimulator.Build.0 = Release|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.AppStore|Any CPU.Build.0 = Release|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.AppStore|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.AppStore|iPhoneSimulator.Build.0 = Release|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Release|iPhone.Build.0 = Release|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{C2ABC650-06F0-4E1C-A9BF-8B5D0C9A14D3}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = ActionBarCompat\ActionBarCompat.csproj
 	EndGlobalSection
 EndGlobal
