@@ -1,15 +1,18 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupItem="GetMapAsync/GetMapAsync.csproj">
+﻿<Properties GitUserInfo="UsingGIT" StartupItem="ToolBarTabsMap/ViewPagerTabsMap.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ActionBarMap/Fragments/MyMapFragment.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToolBarTabsMap/Adapters/ViewPagerAdapter.cs">
     <Files>
-      <File FileName="ActionBarMap/Fragments/MyMapFragment2.cs" Line="1" Column="1" />
-      <File FileName="ActionBarMap/Fragments/MyMapFragment.cs" Line="4" Column="4" />
+      <File FileName="ToolBarTabsMap/MainActivity.cs" Line="3" Column="3" />
+      <File FileName="ToolBarTabsMap/Fragments/MyMapFragment.cs" Line="1" Column="1" />
+      <File FileName="ToolBarTabsMap/Adapters/ViewPagerAdapter.cs" Line="31" Column="31" />
+      <File FileName="ToolBarTabsMap/Resources/values/Styles.xml" Line="31" Column="31" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ViewPagerTabsMap MonoForAntroid.PreferredDevice="Nexus 4" />
   <MonoDevelop.Ide.ItemProperties.GetMapAsync MonoForAntroid.PreferredDevice="Nexus 4" />
   <MonoDevelop.Ide.ItemProperties.ActionBarMap MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" />
 </Properties>

@@ -45,9 +45,7 @@ namespace ActionBarMaps
 			drawerList.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => ListItemClicked (e.Position);
 			ListItemClicked (0);
 
-	
 			SupportActionBar.SetDisplayHomeAsUpEnabled (true);
-			SupportActionBar.SetHomeButtonEnabled (true);
 		}
 
 		void ListItemClicked (int position)
