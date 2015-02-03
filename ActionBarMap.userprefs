@@ -1,4 +1,4 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupItem="ToolBarTabsMap/ViewPagerTabsMap.csproj">
+﻿<Properties GitUserInfo="UsingGIT" StartupItem="MapsInTabs/MapsInTabs.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (KitKat)" />
   <MonoDevelop.Ide.Workbench ActiveDocument="ToolBarTabsMap/Adapters/ViewPagerAdapter.cs">
     <Files>
