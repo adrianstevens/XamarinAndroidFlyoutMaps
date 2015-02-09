@@ -1,18 +1,20 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupItem="MapsInTabs/MapsInTabs.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ToolBarTabsMap/Adapters/ViewPagerAdapter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MapsInTabs/Fragments/MyMapFragment.cs">
     <Files>
-      <File FileName="ToolBarTabsMap/MainActivity.cs" Line="3" Column="3" />
-      <File FileName="ToolBarTabsMap/Fragments/MyMapFragment.cs" Line="1" Column="1" />
-      <File FileName="ToolBarTabsMap/Adapters/ViewPagerAdapter.cs" Line="31" Column="31" />
-      <File FileName="ToolBarTabsMap/Resources/values/Styles.xml" Line="31" Column="31" />
+      <File FileName="ActionBarMap/Fragments/MyMapFragment3.cs" Line="1" Column="1" />
+      <File FileName="MapsInTabs/Fragments/MyMapFragment.cs" Line="20" Column="20" />
+      <File FileName="../../../xam/XamarinUniversity/Course_Materials/AND230 - Maps and Location in Android/Lab Materials/Lab 01 resources/MappingAndroidLab_Complete/MappingAndroidLab_demo1/MainActivity.cs" Line="13" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/adrianstevens/dev/open/XamarinAndroidFlyoutMaps/ToolBarTabsMap/Fragments/MyMapFragment.cs" line="21" column="4" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ViewPagerTabsMap MonoForAntroid.PreferredDevice="Nexus 4" />
-  <MonoDevelop.Ide.ItemProperties.GetMapAsync MonoForAntroid.PreferredDevice="Nexus 4" />
   <MonoDevelop.Ide.ItemProperties.ActionBarMap MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" />
+  <MonoDevelop.Ide.ItemProperties.GetMapAsync MonoForAntroid.PreferredDevice="Nexus 4" />
+  <MonoDevelop.Ide.ItemProperties.ViewPagerTabsMap MonoForAntroid.PreferredDevice="Nexus 4" />
+  <MonoDevelop.Ide.ItemProperties.MapsInTabs MonoForAntroid.PreferredDevice="Nexus 4" />
 </Properties>

@@ -3,6 +3,7 @@ using Android.Gms.Maps;
 using Android.OS;
 using Android.Views;
 using Android.App;
+using Android.Gms.Maps.Model;
 
 namespace MapsInTabs
 {
@@ -11,6 +12,8 @@ namespace MapsInTabs
 		MapFragment _myMapFrag;
 		GoogleMap _map;
 		static View view;
+
+		private static readonly LatLng LatLong_Van = new LatLng(49.25, -123.1);
 
 		public override void OnCreate(Bundle savedInstanceState)
 		{
@@ -23,6 +26,23 @@ namespace MapsInTabs
 				view = inflater.Inflate(Resource.Layout.MapFrag, null);
 
 			return view;
+		}
+
+		public override void OnResume ()
+		{
+			base.OnResume ();
+
+			_myMapFrag = FragmentManager.FindFragmentById(Resource.Id.map) as MapFragment;
+			_map = _myMapFrag.Map;
+
+			_map.MapType = GoogleMap.MapTypeSatellite;
+
+			MarkerOptions markerOp = new MarkerOptions()
+				.SetPosition(LatLong_Van)
+				.SetTitle("Vancouver")
+				.SetSnippet("BC, Canada")
+				.InvokeIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueGreen));
+			_map.AddMarker(markerOp);
 		}
 	}
 }
