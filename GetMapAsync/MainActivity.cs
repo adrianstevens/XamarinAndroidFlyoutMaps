@@ -24,9 +24,14 @@ namespace GetMapAsync
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
+			if (CheckGooglePlayServices.CheckPlayServices (this) == false)
+				this.Finish ();
+
 			// Get our button from the layout resource,
 			// and attach an event to it
 			Button button = FindViewById<Button> (Resource.Id.myButton);
+
+
 			
 			button.Click += async delegate {
 				if(bAdded == false)

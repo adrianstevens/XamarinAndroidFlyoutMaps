@@ -62,6 +62,7 @@
     <Compile Include="..\ActionBarMap\GoogleMapsKey.cs">
       <Link>GoogleMapsKey.cs</Link>
     </Compile>
+    <Compile Include="GooglePlayServicesHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

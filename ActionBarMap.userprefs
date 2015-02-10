@@ -1,10 +1,9 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupItem="MapsInTabs/MapsInTabs.csproj">
+﻿<Properties GitUserInfo="UsingGIT" StartupItem="GetMapAsync/GetMapAsync.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MapsInTabs/Fragments/MyMapFragment.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GetMapAsync/MainActivity.cs">
     <Files>
-      <File FileName="ActionBarMap/Fragments/MyMapFragment3.cs" Line="1" Column="1" />
-      <File FileName="MapsInTabs/Fragments/MyMapFragment.cs" Line="20" Column="20" />
-      <File FileName="../../../xam/XamarinUniversity/Course_Materials/AND230 - Maps and Location in Android/Lab Materials/Lab 01 resources/MappingAndroidLab_Complete/MappingAndroidLab_demo1/MainActivity.cs" Line="13" Column="13" />
+      <File FileName="GetMapAsync/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="GetMapAsync/CheckGooglePlayServices.cs" Line="39" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
