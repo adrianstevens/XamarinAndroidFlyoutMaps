@@ -52,7 +52,7 @@
       <HintPath>..\packages\Xamarin.Android.Support.v7.MediaRouter.21.0.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
     </Reference>
     <Reference Include="GooglePlayServicesLib">
-      <HintPath>..\packages\Xamarin.GooglePlayServices.22.0.0.0\lib\MonoAndroid41\GooglePlayServicesLib.dll</HintPath>
+      <HintPath>..\packages\Xamarin.GooglePlayServices.22.0.0.1\lib\MonoAndroid41\GooglePlayServicesLib.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

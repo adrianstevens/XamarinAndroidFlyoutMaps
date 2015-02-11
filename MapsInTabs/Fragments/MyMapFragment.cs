@@ -44,6 +44,13 @@ namespace MapsInTabs
 				.InvokeIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueGreen));
 			_map.AddMarker(markerOp);
 		}
+
+		public override void OnStop ()
+		{
+			base.OnStop ();
+
+			view = null;
+		}
 	}
 }
 

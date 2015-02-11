@@ -1,19 +1,20 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupItem="GetMapAsync/GetMapAsync.csproj">
+﻿<Properties GitUserInfo="UsingGIT" StartupItem="MapsInTabs/MapsInTabs.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GetMapAsync/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MapsInTabs/Fragments/MyMapFragment.cs">
     <Files>
-      <File FileName="GetMapAsync/MainActivity.cs" Line="1" Column="1" />
-      <File FileName="GetMapAsync/CheckGooglePlayServices.cs" Line="39" Column="39" />
+      <File FileName="GetMapAsync/GooglePlayServicesHelper.cs" Line="6" Column="6" />
+      <File FileName="MapsInTabs/Fragments/MyMapFragment.cs" Line="3" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/adrianstevens/dev/open/XamarinAndroidFlyoutMaps/ToolBarTabsMap/Fragments/MyMapFragment.cs" line="21" column="4" />
+      <Breakpoint file="/Users/adrianstevens/dev/open/XamarinAndroidFlyoutMaps/MapsInTabs/Fragments/MyMapFragment.cs" line="33" column="3" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ActionBarMap MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" />
-  <MonoDevelop.Ide.ItemProperties.GetMapAsync MonoForAntroid.PreferredDevice="Nexus 4" />
-  <MonoDevelop.Ide.ItemProperties.ViewPagerTabsMap MonoForAntroid.PreferredDevice="Nexus 4" />
   <MonoDevelop.Ide.ItemProperties.MapsInTabs MonoForAntroid.PreferredDevice="Nexus 4" />
+  <MonoDevelop.Ide.ItemProperties.ViewPagerTabsMap MonoForAntroid.PreferredDevice="Nexus 4" />
+  <MonoDevelop.Ide.ItemProperties.GetMapAsync MonoForAntroid.PreferredDevice="Nexus 4" />
+  <MonoDevelop.Ide.ItemProperties.ActionBarMap MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" />
 </Properties>
