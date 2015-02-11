@@ -33,7 +33,7 @@ namespace MapsInTabs
 			base.OnResume ();
 
 			_myMapFrag = FragmentManager.FindFragmentById(Resource.Id.map) as MapFragment;
-			_map = _myMapFrag.Map;
+			_map = _myMapFrag.Map;//see GetMapAsync for a non-blocking solution
 
 			_map.MapType = GoogleMap.MapTypeSatellite;
 

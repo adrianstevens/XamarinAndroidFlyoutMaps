@@ -53,7 +53,7 @@ namespace MapsInTabs
 			this.ActionBar.AddTab(tab);
 		}
 
-		//code to save the current tab on orientation changes, etc.
+		//save the current tab on orientation changes, etc.
 		protected override void OnStop ()
 		{
 			base.OnStop ();
