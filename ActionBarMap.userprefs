@@ -1,4 +1,4 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupItem="ToolBarTabsMap/ViewPagerTabsMap.csproj">
+﻿<Properties GitUserInfo="UsingGIT" StartupItem="ActionBarMap/ActionBarMap.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (KitKat)" />
   <MonoDevelop.Ide.Workbench ActiveDocument="MapsInTabs/Fragments/MyMapFragment.cs">
     <Files>
@@ -13,8 +13,8 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ActionBarMap MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" />
-  <MonoDevelop.Ide.ItemProperties.GetMapAsync MonoForAntroid.PreferredDevice="Nexus 4" />
-  <MonoDevelop.Ide.ItemProperties.ViewPagerTabsMap MonoForAntroid.PreferredDevice="Nexus 4" />
   <MonoDevelop.Ide.ItemProperties.MapsInTabs MonoForAntroid.PreferredDevice="Nexus 4" />
+  <MonoDevelop.Ide.ItemProperties.ViewPagerTabsMap MonoForAntroid.PreferredDevice="Nexus 4" />
+  <MonoDevelop.Ide.ItemProperties.GetMapAsync MonoForAntroid.PreferredDevice="Nexus 4" />
+  <MonoDevelop.Ide.ItemProperties.ActionBarMap MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" />
 </Properties>
