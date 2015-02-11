@@ -9,11 +9,11 @@ namespace MapsInTabs
 {
 	public class MyMapFragment : Fragment
 	{
+		private static readonly LatLng LatLong_Van = new LatLng(49.25, -123.1);
+
 		MapFragment _myMapFrag;
 		GoogleMap _map;
-		static View view;
 
-		private static readonly LatLng LatLong_Van = new LatLng(49.25, -123.1);
 
 		public override void OnCreate(Bundle savedInstanceState)
 		{
@@ -22,10 +22,7 @@ namespace MapsInTabs
 
 		public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 		{
-			if (view == null)
-				view = inflater.Inflate(Resource.Layout.MapFrag, null);
-
-			return view;
+			return inflater.Inflate(Resource.Layout.MapFrag, null);
 		}
 
 		public override void OnResume ()
@@ -45,11 +42,15 @@ namespace MapsInTabs
 			_map.AddMarker(markerOp);
 		}
 
-		public override void OnStop ()
+		public override void OnDestroyView ()
 		{
-			base.OnStop ();
+			base.OnDestroyView ();
 
-			view = null;
+			if (_myMapFrag != null) 
+			{
+				FragmentManager.BeginTransaction ().Remove (_myMapFrag).Commit ();
+				_myMapFrag = null;
+			}
 		}
 	}
 }

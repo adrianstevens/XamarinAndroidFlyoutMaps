@@ -12,9 +12,9 @@ namespace ToolBarTabsMap
 
 		public static JavaString[] Titles = new[]
 		{
-			new JavaString("Tab1"),
+			new JavaString("Support MapFrag"),
 			new JavaString("Tab2"),
-			new JavaString("Tab3"),
+			new JavaString("My MapFrag"),
 			new JavaString("Tab4"),
 			new JavaString("Tab5"),
 		};
@@ -30,9 +30,10 @@ namespace ToolBarTabsMap
 
 			fragments.Add (new SupportMapFragment ());
 			fragments.Add (new Fragment1());
+			fragments.Add (new MyMapFragment ());
 			fragments.Add (new Fragment2());
 			fragments.Add (new Fragment3());
-			fragments.Add (new MyMapFragment ());
+
 		}
 
 		public override Java.Lang.ICharSequence GetPageTitleFormatted (int position)

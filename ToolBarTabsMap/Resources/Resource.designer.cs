@@ -1604,7 +1604,7 @@ namespace ToolBarTabsMap
 			public const int list_item = 2131492921;
 			
 			// aapt resource value: 0x7f0c0053
-			public const int location_map = 2131492947;
+			public const int map = 2131492947;
 			
 			// aapt resource value: 0x7f0c0017
 			public const int match_parent = 2131492887;
